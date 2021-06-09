@@ -41,7 +41,21 @@ class HeroController extends AbstractController
      */
     public function getHeroById(Hero $hero): Response
     {
-        return $this->json([$hero]);
+        return $this->json($hero);
+    }
+
+    /**
+     * @Route("/api/heroes/update/{id}/{newName}", name="hero_update")
+     */
+    public function updateHero(int $id, string $newName): Response
+    {
+        $entityManager = $this->getDoctrine()->getManager();
+        $hero = $entityManager->getRepository(Hero::class)->find($id);
+
+        $hero->setName($newName);
+        $entityManager->flush();
+
+        return $this->json($hero);
     }
 
     /**
