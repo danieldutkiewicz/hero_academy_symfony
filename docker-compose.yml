@@ -1,3 +1,7 @@
+# docker compose version
+# it occurred that creating docker-compose is overkill for that app
+# however I decided to keep it in case of look at it in the future
+
 version: '3'
 
 networks:
