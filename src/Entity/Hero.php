@@ -45,5 +45,8 @@ class Hero
 
     public function Jumping(){
         //asoidjaoidjpsadsa
+    public function shooting()
+    {
+        // shooting
     }
 }
