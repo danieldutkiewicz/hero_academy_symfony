@@ -38,4 +38,8 @@ class Hero
 
         return $this;
     }
+
+    public function Movement(){
+        //asoidjaoidjpsadsa
+    }
 }
