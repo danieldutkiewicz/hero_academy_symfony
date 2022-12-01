@@ -42,4 +42,8 @@ class Hero
     public function Movement(){
         //asoidjaoidjpsadsa
     }
+
+    public function Jumping(){
+        //asoidjaoidjpsadsa
+    }
 }
