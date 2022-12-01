@@ -38,4 +38,9 @@ class Hero
 
         return $this;
     }
+
+    public function shooting()
+    {
+        // shooting
+    }
 }
